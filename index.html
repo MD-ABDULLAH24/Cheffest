@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="dark dark:bg-[#0D0D0D] p-4">
+   <!--================ Navbar Start ===============-->
+   <nav class="bg-slate-100 dark:bg-black py-4 absolute w-full top-0 left-0 z-40 pt-[94px] md:pt-4">
+    <div class="container">
+        <div class="grid grid-cols-[auto_auto] md:grid-cols-[auto_1fr_auto]">
+            <a href="#" class="absolute md:static left-1/2 top-2 md:translate-x-1 -translate-x-1/2 w-[60px] h-[60px] md:w-auto md:h-auto">
+                <img src="./images/Logo.svg" alt="logo">
+            </a>
+            <span type="button" class="md:hidden">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6.99951H25M4 13.9995H25M4 20.9995H25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </span>
+            <ul class="hidden md:flex justify-center items-center gap-[6px]">
+                <li>
+                    <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Welcome</a>
+                </li>
+                <li>
+                    <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Our Menu</a>
+                </li>
+                <li>
+                    <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Franchise</a>
+                </li>
+                <li>
+                    <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="flex gap-1 md:gap-2 items-center justify-end">
+                <button class=" relative p-1 w-8 h-8 rounded-full bg-transparent cursor-pointer">
+                    <span class="w-3 h-3 rounded-full bg-red-500 text-white flex justify-center items-center absolute top-0 right-[-6px] text-[8px]">2</span>
+                    <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.7436 32.9999C23.1445 32.9999 24.2802 31.8159 24.2802 30.3554C24.2802 28.8949 23.1445 27.7109 21.7436 27.7109C20.3427 27.7109 19.207 28.8949 19.207 30.3554C19.207 31.8159 20.3427 32.9999 21.7436 32.9999Z" fill="white"/>
+                        <path d="M10.146 32.9999C11.5469 32.9999 12.6825 31.8159 12.6825 30.3554C12.6825 28.8949 11.5469 27.7109 10.146 27.7109C8.74504 27.7109 7.60938 28.8949 7.60938 30.3554C7.60938 31.8159 8.74504 32.9999 10.146 32.9999Z" fill="white"/>
+                        <path d="M5.20361 4.95407L4.91371 8.65631C4.85573 9.36654 5.39204 9.95587 6.07329 9.95587H28.2647C28.8735 9.95587 29.3808 9.47231 29.4243 8.83765C29.6127 6.16296 27.6559 3.98695 25.0904 3.98695H7.27635C7.13141 3.32206 6.84151 2.68739 6.39218 2.1585C5.66744 1.35761 4.65281 0.88916 3.60919 0.88916H1.0871C0.492821 0.88916 0 1.40294 0 2.0225C0 2.64206 0.492821 3.15584 1.0871 3.15584H3.60919C4.05852 3.15584 4.47887 3.35228 4.78326 3.68473C5.08765 4.03229 5.2326 4.48562 5.20361 4.95407Z" fill="white"/>
+                        <path d="M27.9192 12.2227H5.68424C5.07546 12.2227 4.58264 12.7062 4.52466 13.3258L4.00285 19.8991C3.79993 22.4832 5.74222 24.6894 8.22082 24.6894H24.339C26.5132 24.6894 28.4265 22.8307 28.5859 20.564L29.0642 13.5071C29.1222 12.812 28.6004 12.2227 27.9192 12.2227Z" fill="white"/>
+                        </svg>
+                </button>
+                <button class=" p-1 w-8 h-8 rounded-full bg-transparent cursor-pointer">
+                    <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.4583 29.7502C22.8912 29.7502 28.9167 23.7247 28.9167 16.2918C28.9167 8.859 22.8912 2.8335 15.4583 2.8335C8.0255 2.8335 2 8.859 2 16.2918C2 23.7247 8.0255 29.7502 15.4583 29.7502Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M30.3333 31.1668L27.5 28.3335" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+   <!-- ================= Navbar End ================-->
+   <!--================= Hero section Start ================-->
+    <section class="pt-[230px] lg:pt-[200px] pb-[124px] lg:pb-[246px] bg-slate-100 hero_bg hero_after">
+        <div class="container">
+            <div class="max-w-[652px]">
+                <h1 class="pb-[10px]"><span class="block">Welcome!</span> We Made Delicious Food for You</h1>
+                <p class=" pb-[30px] md:pb-[40px] lg:pr-[142px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <button>Order Online</button>
+            </div>
+        </div>
+    </section>
+   <!--================= Hero section End ================ -->
+
+   <!--================= Hero section Start ================-->
+   <section>
+    <div class="container">
+        <div class="text-center mx-3 md:mx-0">
+            <div class="">
+                <h2 class="text-[28px] md:text-[50px]">Why We are Best Food Maker</h2>
+                <p class="text-lg leading-[30px] pt-[20px] pt-[20px md:max-w-[740px] md:mx-auto md:pt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:flex md:mt-[70px] md:leading-[30px] md:text-left">
+                <div>
+                    <p class="text-lg leading-[30px] pt-[20px] md:pt-0 md:w-[513px] md:gap-[87px]">It is a long established fact that a reader will be distracted layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The normal distribution of letters, as opposed to using 'Content  Many desktop publishing packages and web page editors search for 'lorem ipsum' will uncover many web sites still in  humour and the like. <span class="font-bold">Read More</span></p>
+                </div>
+                <div class=" relative oprounded-[17px] overflow-hidden md:pl-[50px]">
+                    <img class="w-full h-full object-cover" src="/images/image 1102.png" alt="">
+                    <div class="w-[80px] h-[80px] dark:bg-white rounded-full flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                        <svg width="38" height="46" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 18L4.09071e-06 35.3205L5.60492e-06 0.67949L30 18Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--================= Hero section End ================-->
+   
+   <!--================= menu section Start ================-->
+   <section>
+    <div class="container">
+        <div>
+            <h2 class="md:text-center md:pb-[50px] text-7 text-center font-normal leading-2 pb-[30px] text-[30px]">Our Best & Delicious Menu</h2>
+        </div>
+        <div class="overflow-x-scroll md:overflow-hidden">
+            <ul class="flex md:pb-[40px] gap-3 md:gap-[104px] md:justify-center items-center">
+                <li class="text-base dark:text-white leading-7 text-nowrap">All</li>   
+                <li class="text-base dark:text-white leading-7 text-nowrap">Bread</li>
+                <li class="text-base dark:text-white leading-7 text-nowrap">Chiffon & Rolls</li>
+                <li class="text-base dark:text-white leading-7 text-nowrap">Donut</li>
+                <li class="text-base dark:text-white leading-7 text-nowrap">Pastry & Danish</li>
+                <li class="text-base dark:text-white leading-7 text-nowrap">Cakes</li>
+                <li class="text-base dark:text-white leading- text-nowrap">Cookis</li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-1 gap-[30px]  mt-[40px] md:grid-cols-2 lg:grid-cols-3">
+            <div class="mx-[17px] md:mx-0  dark:bg-[#191919] p-5 rounded-[10px]">
+                <div class="mb-[20px]">
+                    <img src="./images/Image.png" alt="">
+                </div>
+                <div>
+                    <h3 class="dark:text-white text-[20px] font-bold pb-2">Naan Burger</h3>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between gap-2 items-center pt-[15px]">
+                        <span class="dark:text-white text-[24px] font-bold">$1.85</span>
+                        <span class="w-10 h-10 rounded-full border-white flex justify-center items-center border-2 p-1">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-[17px] md:mx-0  dark:bg-[#191919] p-5 rounded-[10px]">
+                <div class="mb-[20px]">
+                    <img src="./images/food_1.png" alt="">
+                </div>
+                <div>
+                    <h3 class="dark:text-white text-[20px] font-bold pb-2">Butter Chicken Taco</h3>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between gap-2 items-center">
+                        <span class="dark:text-white text-[24px] font-bold">$1.85</span>
+                        <span class="w-10 h-10 rounded-full border-white flex justify-center items-center border-2 p-1">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-[17px] md:mx-0  dark:bg-[#191919] p-5 rounded-[10px]">
+                <div class="mb-[20px]">
+                    <img src="./images/food_2.png" alt="">
+                </div>
+                <div>
+                    <h3 class="dark:text-white text-[20px] font-bold pb-2">Cheese Chicken Naan</h3>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between gap-2 items-center">
+                        <span class="dark:text-white text-[24px] font-bold">$2.50</span>
+                        <span class="w-10 h-10 rounded-full border-white flex justify-center items-center border-2 p-1">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-[17px] md:mx-0  dark:bg-[#191919] p-5 rounded-[10px]">
+                <div class="mb-[20px]">
+                    <img src="./images/food_3.png" alt="">
+                </div>
+                <div>
+                    <h3 class="dark:text-white text-[20px] font-bold pb-2">3 Layer Burger</h3>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between gap-2 items-center">
+                        <span class="dark:text-white text-[24px] font-bold">$4.99</span>
+                        <span class="w-10 h-10 rounded-full border-white flex justify-center items-center border-2 p-1">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-[17px] md:mx-0  dark:bg-[#191919] p-5 rounded-[10px]">
+                <div class="mb-[20px]">
+                    <img src="./images/food_4.png" alt="">
+                </div>
+                <div>
+                    <h3 class="dark:text-white text-[20px] font-bold pb-2">Sandwich</h3>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between gap-2 items-center">
+                        <span class="dark:text-white text-[24px] font-bold">$2.65</span>
+                        <span class="w-10 h-10 rounded-full border-white flex justify-center items-center border-2 p-1">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-[17px] md:mx-0  dark:bg-[#191919] p-5 rounded-[10px]">
+                <div class="mb-[20px]">
+                    <img src="./images/food_2.png" alt="">
+                </div>
+                <div>
+                    <h3 class="dark:text-white text-[20px] font-bold pb-2">Cheese Chicken Naan</h3>
+                    <p class="pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between gap-2 items-center">
+                        <span class="dark:text-white text-[24px] font-bold">$2.50</span>
+                        <span class="w-10 h-10 rounded-full border-white flex justify-center items-center border-2 p-1">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </span>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+        <div class="items-center justify-center flex mt-[35px]">
+            <button>See All</button>
+        </div>
+    </div>
+   </section>
+
+   <!--================= menu section End ================-->
+
+   <!--================= Food section Start ================-->
+   <section>
+    <div class="container">
+        <div>
+            <h2 class="text-center text-[26px] md:text-[44px] leading-[40px] md:leading-[44px] font-normal md:font-bold">We believe in making quality food</h2>
+        </div>
+        <div class=" grid grid-cols-1 md:grid-cols-4 gap-2 justify-between mt-[60px] text-center">
+            <div class="">
+                <h4 class="pb-[28px] md:text-[56px] leading-[66px] font-bold">2M+</h4>
+                <p>Happy Customers</p>
+            </div>
+            <div class="">
+                <h4 class="pb-[18px] md:text-[56px] leading-[66px] font-bold">98%</h4>
+                <p>Customer Satisfaction</p>
+            </div>
+            <div class="">
+                <h4 class="pb-[18px] md:text-[56px] text-[46px] leading-[66px] font-bold">20+</h4>
+                <p>Our Branches </p>
+            </div>
+            <div class="">
+                <h4 class="pb-[18px] md:text-[56px] leading-[66px] font-bold">100+</h4>
+                <p>Total Employees </p>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--================= Food section End ================-->
+
+
+   <!--================= Adventure section Start ================-->
+   <section>
+    <div class="container">
+        <div class="mx-[5px] mx-0">
+            <h2 class="text-center mb-[20px] md:text-[50px] text-[28px]">Start The Adventure Today And Become a Franchisee</h2>
+        </div>
+        <div>
+            <p class="leading-[30px] md:text-[20px] text-16px text-center mx-[5px] mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="mt-[35px] flex items-center justify-center">
+            <button>Become a Franchisee</button>
+        </div>
+    </div>
+   </section>
+   <!--================= Adventure section End ================-->
+
+<!--======================Client section Start  ================-->
+   <section>
+    <div class="container">
+        <div>
+            <h2 class="text-center pb-[50px] text-[28px] md:text-[50px]">What Our Clients Are Saying</h2>
+        </div>
+        <div class="grid grid-cols-1 lg-grid-cols-2 md:grid-cols-3 gap-[30px] mb-[80px]">
+            <div class="p-[30px] rounded-[20px] dark:bg-[#191919]">
+                <div class="flex gap-[20px] mt-[20px] mb-[20px] ">
+                    <div class="">
+                        <img src="./images/Avater.png" alt="">
+                    </div>
+                    <div class="ml-[2px]">
+                        <h2 class="text-[20px]">Michal Gun</h2>
+                        <p class="pb-2">Head of sales at Tesla </p>
+                        <span class=""><img src="./images/Stars.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-[30px]">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                </div>
+            </div>
+            <div class="p-[30px] rounded-[20px] dark:bg-[#191919]">
+                <div class="flex gap-[20px] mt-[20px] mb-[20px] ">
+                    <div class="">
+                        <img src="./images/Avater (3).png" alt="">
+                    </div>
+                    <div class="ml-[2px]">
+                        <h2 class="text-[20px]">Aleena White</h2>
+                        <p class="pb-2">Accountant of Ozone  </p>
+                        <span class=""><img src="./images/Stars.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-[30px]">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                </div>
+            </div>
+            <div class="p-[30px] rounded-[20px]  dark:bg-[#191919]">
+                <div class="flex gap-[20px] mt-[20px] mb-[20px] ">
+                    <div class="">
+                        <img src="./images/Avater (2).png" alt="">
+                    </div>
+                    <div class="ml-[2px]">
+                        <h2 class="text-[20px]">Cries Lee</h2>
+                        <p class="pb-2">CEO Of Montee</p>
+                        <span class=""><img src="./images/Stars.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-[30px]">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                </div>
+            </div>
+            <div class="p-[30px] rounded-[20px]  dark:bg-[#191919]">
+                <div class="flex gap-[20px] mt-[20px] mb-[20px] ">
+                    <div class="">
+                        <img src="./images/Avater.png" alt="">
+                    </div>
+                    <div class="ml-[2px]">
+                        <h2 class="text-[20px]">Michal Gun</h2>
+                        <p class="pb-2">Head of sales at Tesla </p>
+                        <span class=""><img src="./images/Stars.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-[30px]">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                </div>
+            </div>
+            <div class="p-[30px] rounded-[20px] dark:bg-[#191919]">
+                <div class="flex gap-[20px] mt-[20px] mb-[20px] ">
+                    <div class="">
+                        <img src="./images/Avater (3).png" alt="">
+                    </div>
+                    <div class="ml-[2px]">
+                        <h2 class="text-[20px]">Aleena White</h2>
+                        <p class="pb-2">Accountant of Ozone </p>
+                        <span class=""><img src="./images/Stars.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-[30px]">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                </div>
+            </div>
+            <div class="p-[30px] rounded-[20px] dark:bg-[#191919]">
+                <div class="flex gap-[20px] mt-[20px] mb-[20px] ">
+                    <div class="">
+                        <img src="./images/Avater (2).png" alt="">
+                    </div>
+                    <div class="ml-[2px]">
+                        <h2 class="text-[20px]">Cries Lee</h2>
+                        <p class="pb-2">CEO Of Montee</p>
+                        <span class=""><img src="./images/Stars.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-[30px]">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+<!--================ Client section end  =======================-->
+
+<!--================ Support section Start  =======================-->
+<section class="bg-white">
+    <div class="container">
+        <div>
+            <h2 class="text-black text-[28px] text-center pb-[40px] md:text-[70px] md:font-bold md:leading-[90px]">For more Support</h2>
+        </div>
+        <div class="text-center">
+            <input class="text-black text-[17px] font-medium border-2 border-black md:pl-[30px] pl-[15px] pr-[60px] md:pr-[300px] py-4 rounded-full" type="mail" placeholder="Enter Email">
+            <button class="bg-black mt-[26px] text-white ml-4 mb-[40px]">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+<!--================ Support section end  =======================-->
+
+<!--================ Support section end  =======================-->
+<section>
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div class="text-center md:text-left">
+                <h2 class="text-center md:text-left md:text-[50px] text-[28px]">Our Restaurants.
+                    Where to Find Us?</h2>
+                    <p class=" text-center md:text-left pt-[16px] pb-[35px] md:pb-[70px] md:leading-[1.4] md:pr-[150px]">Want to have a superb meal in an exceptional setting with family, friends or work colleagues, here are the addresses of our restaurants.</p>
+                    <button class="py-[17px] px-[38px]">Find The Nearest Cheffest</button>
+
+            </div>
+            <div class=" ">
+                <img class="" src="./images/MAP.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Support section end  =======================-->
+
+<!--================ Footer section Start  =======================-->
+<section class="bg-[#191919] py-[60px] mt-[50px] md:mt-[150px]">
+    <div class="container">
+    
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-[103px] p-5">
+            <div class="pb-[30px]">
+                <h4 class="pb-[30px] text-[24px] leading-6 font-semibold">Our Products</h4>
+                <ul class=" text-white  text-[18px] leading-[18px]">
+                    <li>Our menus</li>
+                    <li class="md:py-6 py-3">Our burgers</li>
+                    <li>Our times sides</li>
+                    <li class="md:pt-6 pt-3">Our naandwiches</li>
+                </ul>
+            </div>
+            <div class="pb-[30px]">
+                <h4 class="pb-[30px] text-[24px] leading-6 font-semibold">legal information</h4>
+                <ul class=" text-white  text-[18px] leading-[18px] ">
+                    <li>Legal Notice</li>
+                </ul>
+            </div>
+            <div class="pb-[30px]">
+                <h4 class="pb-[30px] text-[24px] leading-6 font-semibold">Contact us</h4>
+                <ul class=" text-white text-[18px] leading-[18px]">
+                    <li>Contacts</li>
+                    <li class="md:py-6 py-3">Our addresses</li>
+                    <li>Become a Times Square franchisee</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4 class="pb-[30px] text-[24px] leading-6 font-semibold">We accept</h4>
+               <div class="grid grid-cols-2 w-[175px] ">
+                <span class="mb-5 ">
+                    <img src="./images/Mastercard.png" alt="">
+                </span>
+                <span class="">
+                    <img src="./images/Visa.png" alt="">
+                </span>
+                <span>
+                    <img src="./images/American.png" alt="">
+                </span>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Footer section end  =======================-->
+<section>
+    <div class="container">
+        <div>
+            <hr class="bg-[#4F4F4F]">
+        </div>
+        <div class="flex items-center justify-between gap-8">
+            <div class="flex mt-[28px] gap-5">
+                <span>
+                    <img src="./images/Icon (1).png" alt="">
+                </span>
+                <span>
+                    <img src="./images/Icon (2).png" alt="">
+                </span>
+                <span>
+                    <img src="./images/Icon (3).png" alt="">
+                </span>
+                <span>
+                    <img src="./images/Icon (4).png" alt="">
+                </span>
+            </div>
+            <ul>
+                <li class="text-white pt-[24px]">© 2024 Nayef All rights reserved.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>
