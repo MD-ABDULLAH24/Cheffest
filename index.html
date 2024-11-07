@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="./src/output.css" rel="stylesheet">
 </head>
-<body class="dark dark:bg-[#0D0D0D] p-4 md:p-0">
+<body class="dark dark:bg-[#0D0D0D]">
    <!--================ Navbar Start ===============-->
    <nav class="bg-slate-100 dark:bg-black py-4 absolute w-full top-0 left-0 z-40 pt-[94px] md:pt-4">
     <div class="container">
@@ -33,7 +33,7 @@
                     <a class="p-4 capitalize text-xl dark:text-white text-black leading-tight" href="#">Contact</a>
                 </li>
             </ul>
-            <div class="flex gap-1 md:gap-2 items-center justify-end">
+            <div class="flex gap-4 items-center justify-end">
                 <button class=" relative p-1 w-8 h-8 rounded-full bg-transparent cursor-pointer">
                     <span class="w-3 h-3 rounded-full bg-red-500 text-white flex justify-center items-center absolute top-0 right-[-6px] text-[8px]">2</span>
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@
                         <path d="M27.9192 12.2227H5.68424C5.07546 12.2227 4.58264 12.7062 4.52466 13.3258L4.00285 19.8991C3.79993 22.4832 5.74222 24.6894 8.22082 24.6894H24.339C26.5132 24.6894 28.4265 22.8307 28.5859 20.564L29.0642 13.5071C29.1222 12.812 28.6004 12.2227 27.9192 12.2227Z" fill="white"/>
                         </svg>
                 </button>
-                <button class=" p-1 w-8 h-8 rounded-full bg-transparent cursor-pointer">
+                <button class=" p-1 w-8 h-8 rounded-full bg-transparent cursor-pointer hidden md:inline-block">
                     <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.4583 29.7502C22.8912 29.7502 28.9167 23.7247 28.9167 16.2918C28.9167 8.859 22.8912 2.8335 15.4583 2.8335C8.0255 2.8335 2 8.859 2 16.2918C2 23.7247 8.0255 29.7502 15.4583 29.7502Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M30.3333 31.1668L27.5 28.3335" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -60,7 +60,7 @@
             <div class="max-w-[652px]">
                 <h1 class="pb-[10px]"><span class="block">Welcome!</span> We Made Delicious Food for You</h1>
                 <p class=" pb-[30px] md:pb-[40px] lg:pr-[142px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <button>Order Online</button>
+                <button class="px-[84px] py-[16px] md:px-[50px] md:py-[10px] leading-7 ">Order Online</button>
             </div>
         </div>
     </section>
@@ -249,7 +249,7 @@
             <p class="leading-[30px] md:text-[20px] text-16px text-center mx-[5px] mx-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <div class="mt-[35px] flex items-center justify-center">
-            <button>Become a Franchisee</button>
+            <button class="px-[47px] py-[20px] md:px[54px]">Become a Franchisee</button>
         </div>
     </div>
    </section>
@@ -413,7 +413,7 @@
 <section class="bg-[#191919] py-[60px] mt-[50px] md:mt-[150px]">
     <div class="container">
     
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-[103px] p-5">
+        <div class="grid grid-cols-1 md:grid-cols-4 md:gap-[103px] gap-[40px] p-5">
             <div class="md:pb-[30px]">
                 <h4 class="pb-[30px] text-[24px] leading-6 font-semibold">Our Products</h4>
                 <ul class=" text-white  text-[18px] leading-[18px]">
@@ -461,8 +461,8 @@
         <div>
             <hr class="bg-[#4F4F4F]">
         </div>
-        <div class="flex items-center justify-between gap-8">
-            <div class="flex mt-[28px] gap-5">
+        <div class="md:flex items-center justify-between gap-8 text-center ">
+            <div class="flex mt-[28px] gap-5 w-full h-full ml-[70px] md:ml-[0]">
                 <span>
                     <img src="./images/Icon (1).png" alt="">
                 </span>

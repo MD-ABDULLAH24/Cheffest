@@ -665,6 +665,8 @@ section{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px){
@@ -770,6 +772,11 @@ section{
   margin-right: 5px;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -824,6 +831,26 @@ section{
 
 .mt-\[60px\]{
   margin-top: 60px;
+}
+
+.ml-7{
+  margin-left: 1.75rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.ml-8{
+  margin-left: 2rem;
+}
+
+.ml-\[64px\]{
+  margin-left: 64px;
+}
+
+.ml-\[70px\]{
+  margin-left: 70px;
 }
 
 .block{
@@ -924,6 +951,10 @@ section{
   grid-template-columns: auto auto;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -940,16 +971,16 @@ section{
   justify-content: space-between;
 }
 
-.gap-1{
-  gap: 0.25rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
 
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
@@ -964,16 +995,16 @@ section{
   gap: 2rem;
 }
 
-.gap-\[103px\]{
-  gap: 103px;
-}
-
 .gap-\[20px\]{
   gap: 20px;
 }
 
 .gap-\[30px\]{
   gap: 30px;
+}
+
+.gap-\[40px\]{
+  gap: 40px;
 }
 
 .gap-\[6px\]{
@@ -1098,6 +1129,46 @@ section{
   padding-bottom: 60px;
 }
 
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[8\]{
+  padding-left: 8;
+  padding-right: 8;
+}
+
+.px-\[84px\]{
+  padding-left: 84px;
+  padding-right: 84px;
+}
+
+.py-\[16px\]{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.px-\[47px\]{
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[20px\]{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-\[60px\]{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1170,8 +1241,8 @@ section{
   padding-top: 94px;
 }
 
-.pb-\[15px\]{
-  padding-bottom: 15px;
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1302,12 +1373,34 @@ section{
     margin-right: auto;
   }
 
+  .md\:mx-\[50px\]{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .md\:my-\[10px\]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .md\:mt-\[150px\]{
     margin-top: 150px;
   }
 
   .md\:mt-\[70px\]{
     margin-top: 70px;
+  }
+
+  .md\:ml-\[\]{
+    margin-left: ;
+  }
+
+  .md\:ml-\[0\]{
+    margin-left: 0;
+  }
+
+  .md\:inline-block{
+    display: inline-block;
   }
 
   .md\:flex{
@@ -1359,8 +1452,12 @@ section{
     justify-content: center;
   }
 
-  .md\:gap-2{
-    gap: 0.5rem;
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:gap-\[103px\]{
+    gap: 103px;
   }
 
   .md\:gap-\[104px\]{
@@ -1375,13 +1472,19 @@ section{
     overflow: hidden;
   }
 
-  .md\:p-0{
-    padding: 0px;
-  }
-
   .md\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:px-\[50px\]{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .md\:py-\[10px\]{
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .md\:pb-\[30px\]{
