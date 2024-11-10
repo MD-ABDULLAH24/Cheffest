@@ -694,7 +694,7 @@ section{
 }
 
 .hero_bg{
-  background: url(/images/Background.png);
+  background: url("../images/Background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -772,11 +772,6 @@ section{
   margin-right: 5px;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -799,6 +794,10 @@ section{
 
 .ml-\[2px\]{
   margin-left: 2px;
+}
+
+.ml-\[70px\]{
+  margin-left: 70px;
 }
 
 .mt-\[20px\]{
@@ -833,24 +832,8 @@ section{
   margin-top: 60px;
 }
 
-.ml-7{
-  margin-left: 1.75rem;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
-}
-
-.ml-\[64px\]{
-  margin-left: 64px;
-}
-
-.ml-\[70px\]{
-  margin-left: 70px;
+.mt-\[\]{
+  margin-top: ;
 }
 
 .block{
@@ -893,6 +876,18 @@ section{
   height: 100%;
 }
 
+.h-\[4\]{
+  height: 4;
+}
+
+.h-\[470px\]{
+  height: 470px;
+}
+
+.h-\[\]{
+  height: ;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -918,6 +913,30 @@ section{
 }
 
 .w-full{
+  width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[483\]{
+  width: 483;
+}
+
+.w-\[483px\]{
+  width: 483px;
+}
+
+.w-\[280px\]{
+  width: 280px;
+}
+
+.w-\[100\]{
+  width: 100;
+}
+
+.w-\[100\%\]{
   width: 100%;
 }
 
@@ -949,10 +968,6 @@ section{
 
 .grid-cols-\[auto_auto\]{
   grid-template-columns: auto auto;
-}
-
-.items-start{
-  align-items: flex-start;
 }
 
 .items-center{
@@ -1035,6 +1050,14 @@ section{
   border-radius: 9999px;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -1109,6 +1132,16 @@ section{
   padding-right: 38px;
 }
 
+.px-\[47px\]{
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.px-\[95px\]{
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1119,44 +1152,14 @@ section{
   padding-bottom: 1rem;
 }
 
-.py-\[17px\]{
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
-
-.py-\[60px\]{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.px-\[\]{
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[8\]{
-  padding-left: 8;
-  padding-right: 8;
-}
-
-.px-\[84px\]{
-  padding-left: 84px;
-  padding-right: 84px;
-}
-
 .py-\[16px\]{
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.px-\[47px\]{
-  padding-left: 47px;
-  padding-right: 47px;
-}
-
-.py-\[\]{
-  padding-top: ;
-  padding-bottom: ;
+.py-\[17px\]{
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .py-\[20px\]{
@@ -1164,9 +1167,19 @@ section{
   padding-bottom: 20px;
 }
 
-.px-\[60px\]{
-  padding-left: 60px;
-  padding-right: 60px;
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .pb-2{
@@ -1241,8 +1254,8 @@ section{
   padding-top: 94px;
 }
 
-.text-left{
-  text-align: left;
+.pl-\[5px\]{
+  padding-left: 5px;
 }
 
 .text-center{
@@ -1348,6 +1361,18 @@ section{
   line-height: 1.25;
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
+.leading-\[\]{
+  line-height: ;
+}
+
+.leading-\[50px\]{
+  line-height: 50px;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1373,14 +1398,8 @@ section{
     margin-right: auto;
   }
 
-  .md\:mx-\[50px\]{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .md\:my-\[10px\]{
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .md\:ml-\[0\]{
+    margin-left: 0;
   }
 
   .md\:mt-\[150px\]{
@@ -1391,12 +1410,8 @@ section{
     margin-top: 70px;
   }
 
-  .md\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .md\:ml-\[0\]{
-    margin-left: 0;
+  .md\:mt-\[0\]{
+    margin-top: 0;
   }
 
   .md\:inline-block{
@@ -1415,12 +1430,20 @@ section{
     height: auto;
   }
 
+  .md\:h-\[470px\]{
+    height: 470px;
+  }
+
   .md\:w-\[513px\]{
     width: 513px;
   }
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-\[483px\]{
+    width: 483px;
   }
 
   .md\:max-w-\[740px\]{
@@ -1452,10 +1475,6 @@ section{
     justify-content: center;
   }
 
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-
   .md\:gap-\[103px\]{
     gap: 103px;
   }
@@ -1472,14 +1491,14 @@ section{
     overflow: hidden;
   }
 
-  .md\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:px-\[50px\]{
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .md\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:py-\[10px\]{
